@@ -1,0 +1,53 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #54004f;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Main nav */
+main {
+  margin: 40px 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin: 25px;
+}
+nav ul li a {
+  text-decoration: none; /* exam question */
+  color: #800077;
+  font-size: 18px;
+  border: 2px solid #800077;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+  
+}
+
+nav ul li a:hover {
+  background: #800077;
+  color: #fff;
+
+}

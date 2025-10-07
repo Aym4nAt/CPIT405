@@ -1,0 +1,10 @@
+/*p {
+    color: red !important;
+}
+*/
+.success {
+    background-color: lightgreen;
+}
+.failed {
+    background-color: darkred;
+}
