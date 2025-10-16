@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="left-side-header">
+        <h1>
+            Ayman Turkistani
+            <span id="sub_title">IT Student</span>
+        </h1>
+    </div>
+    <div class="right-side-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">CV</a></li>
+                <li><a href="schedule.html">Class Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <main class="grid-container">
+    <aside class="profile">
+        <img src="images/profile.jpg" alt="Ayman Turkistani" class="profile-pic">
+        <h2 class="title">Contact</h2>
+        <p>Email: <a href="mailto:aturkistani0049@stu.kau.edu.sa">aturkistani0049@stu.kau.edu.sa</a></p>
+        <p>Phone: <a href="tel:+966560612615">+966560612615</a></p>
+        <div>
+            <a target="_blank" href="ms.html"><img class="social-media-icon" src="images/x.png" alt="X"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aym-turkistani-079998381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img class="social-media-icon" src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </aside>
+    <section class="content">
+      <h2 class="title">Contact</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea><br><br>
+
+        <label>Message Type:</label>
+        <input type="radio" id="complaint" name="type" value="Complaint">
+        <label for="complaint">Complaint</label>
+        <input type="radio" id="inquiry" name="type" value="Inquiry" checked>
+        <label for="inquiry">Inquiry</label>
+        <input type="radio" id="suggestion" name="type" value="Suggestion">
+        <label for="suggestion">Suggestion</label><br><br>
+
+        <button type="submit" class="button">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ayman Turkistani</p>
+  </footer>
+
+</body>
+</html>
