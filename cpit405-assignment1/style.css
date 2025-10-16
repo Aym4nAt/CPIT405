@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  color: #2e1065;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url(images/purpleBG.jpeg);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #5b21b6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+#sub_title {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f3e8ff;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #c084fc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+aside.profile, .sidebar {
+  background-color: #faf5ff;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  border: 0.3rem solid #2e1065;
+  animation: borderColorAnimation 3s linear infinite;
+}
+
+@keyframes borderColorAnimation {
+  0%   { border-color: #2e1065; }
+  25%  { border-color: #5f2cbd; }
+  50%  { border-color: #a073f3; }
+  75%  { border-color: #5f2cbd; }
+  100% { border-color: #2e1065; }
+}
+
+.left-side-menu {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.left-side-menu li {
+  margin: 0.8rem 0;
+}
+
+.left-side-menu a {
+  color: #6d28d9;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.left-side-menu a:hover {
+  color: #a78bfa;
+}
+
+.title {
+  color: #5b21b6;
+  border-bottom: 0.15rem solid #8b5cf6;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+#about::first-letter {
+  color: #7c3aed;       
+  font-size: 2rem;        
+  font-weight: 700;      
+  display: inline-block;  
+  text-shadow: 0 0 5px rgba(124, 58, 237, 0.4); 
+}
+section.content, .content {
+  background-color: #f5f3ff;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+section.content p, .content p {
+  color: #3b0764;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+ul {
+  color: #3b0764;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #4c1d95;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a78bfa;
+}
+
+::selection {
+  background-color: #a78bfa;
+  color: #fff;
+}
+
+.social-media-icon {
+  width: 1.8rem;
+  margin: 0.5rem;
+  filter: drop-shadow(0 0 0.3rem #a78bfa);
+  transition: transform 0.2s ease;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.1);
+}
+
+.schedule-table, .courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #faf5ff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th, .courses-table th {
+  background-color: #6d28d9;
+  color: #fff;
+  padding: 0.8rem;
+  font-weight: 600;
+}
+
+.schedule-table td, .courses-table td {
+  padding: 0.7rem;
+  border-bottom: 0.1rem solid #e9d5ff;
+  color: #3b0764;
+}
+
+.schedule-table tr:nth-child(even),
+.courses-table tr:nth-child(even) {
+  background-color: #f3e8ff;
+}
+
+.schedule-table tr:hover,
+.courses-table tr:hover {
+  background-color: #e9d5ff;
+  transition: 0.3s;
+}
+
+form {
+  margin-top: 1.5rem;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  color: #4c1d95;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #c4b5fd;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background-color: #faf5ff;
+  color: #3b0764;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  background-color: #f3e8ff;
+  box-shadow: 0 0 0.4rem #a78bfa;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+form input[type="radio"] {
+  width: auto;
+  margin-right: 0.3rem;
+  accent-color: #6d28d9;
+}
+
+form label[for="complaint"],
+form label[for="inquiry"],
+form label[for="suggestion"] {
+  font-weight: 500;
+  margin-right: 1rem;
+  color: #4c1d95;
+  display: inline;
+}
+
+form button {
+  background-color: #5b21b6;
+  color: white;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form button:hover {
+  background-color: #7c3aed;
+  transform: scale(1.05);
+}
