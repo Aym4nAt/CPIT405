@@ -74,6 +74,7 @@ section ul li a {
 section ul li a:hover {
   background: #800077;
   color: #fff;
+  transform: scale(1.05);
 }
 
 /* Responsive */
@@ -88,3 +89,4 @@ section ul li a:hover {
     margin-bottom: 30px;
   }
 }
+
